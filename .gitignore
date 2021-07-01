@@ -1,0 +1,9 @@
+venv
+conf.py
+*.pyc
+__pycache__
+.vscode
+*.code-workspace
+.venv
+*.tar.gz
+tests/output
