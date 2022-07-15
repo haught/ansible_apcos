@@ -133,8 +133,8 @@ def main():
         httpport=dict(type='int'),
         httpsport=dict(type='int'),
         httpsproto=dict(type='str'),
-        limitedstatus=dict(type='int'),
-        limitedstatusdefault=dict(type='int'),
+        limitedstatus=dict(type='bool'),
+        limitedstatusdefault=dict(type='bool'),
         tls12ciphersuite=dict(type='int')
     )
 
