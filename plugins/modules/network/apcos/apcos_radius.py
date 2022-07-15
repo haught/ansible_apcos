@@ -148,11 +148,11 @@ def main():
         access=dict(type='str', choices=['local', 'radiuslocal', 'radius']),
         primaryserver=dict(type='str'),
         primaryport=dict(type='int'),
-        primarysecret=dict(type='str'),
+        primarysecret=dict(type='str', no_log=True),
         primarytimeout=dict(type='int'),
         secondaryserver=dict(type='str'),
         secondaryport=dict(type='int'),
-        secondarysecret=dict(type='str'),
+        secondarysecret=dict(type='str', no_log=True),
         secondarytimeout=dict(type='int'),
         forcepwchange=dict(type='bool', default=False)
     )

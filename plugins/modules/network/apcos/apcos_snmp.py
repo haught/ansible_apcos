@@ -105,7 +105,7 @@ def main():
     argument_spec = dict(
         enable=dict(type='bool'),
         index=dict(type='int', choices=[1, 2, 3, 4]),
-        community=dict(type='str'),
+        community=dict(type='str', no_log=True),
         accesstype=dict(type='str', choices=['disabled', 'read', 'write', 'writeplus']),
         accessaddress=dict(type='str')
     )
