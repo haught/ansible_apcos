@@ -80,7 +80,6 @@ from ansible_collections.haught.apcos.plugins.module_utils.network.apcos.apcos i
     load_config,
     get_config,
     parse_config,
-    parse_config_section,
 )
 
 SOURCE = "web"
