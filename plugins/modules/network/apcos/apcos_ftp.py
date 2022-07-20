@@ -29,7 +29,6 @@ options:
     description:
       - Port FTP uses.
     type: int
-    default: 21
 '''
 
 EXAMPLES = """

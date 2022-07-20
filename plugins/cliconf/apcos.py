@@ -22,7 +22,7 @@ __metaclass__ = type
 DOCUMENTATION = '''
 ---
 author: Matt Haught (@haught)
-cliconf: apcos
+name: apcos
 short_description: Use apcos cliconf to run command on APC OS devices
 description:
   - This apcos plugin provides low level abstraction apis for

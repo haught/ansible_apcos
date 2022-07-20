@@ -115,7 +115,6 @@ class TestApcosSmtpModule(TestApcosModule):
         result = self.execute_module(changed=False)
         self.assertEqual(result['changed'], False)
 
-
     def test_apcos_smtp_set_encryption_ifavail(self):
         set_module_args({'encryption': 'ifavail'})
         result = self.execute_module(changed=True)
@@ -170,4 +169,3 @@ class TestApcosSmtpModule(TestApcosModule):
         set_module_args({'certificate': '<n/a>'})
         result = self.execute_module(changed=False)
         self.assertEqual(result['changed'], False)
-

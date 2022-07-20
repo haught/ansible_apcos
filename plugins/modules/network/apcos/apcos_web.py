@@ -33,12 +33,10 @@ options:
     description:
       - Port http uses.
     type: int
-    default: 80
   httpsport:
     description:
       - Port https uses.
     type: int
-    default: 443
   httpsproto:
     description:
       - Minimum https protocol
@@ -131,10 +129,10 @@ def main():
         enablehttps=dict(type='bool'),
         httpport=dict(type='int'),
         httpsport=dict(type='int'),
-        httpsproto=dict(type='str'),
+        httpsproto=dict(type='str', choices=['TLS1.1', 'TLS1.2']),
         limitedstatus=dict(type='bool'),
         limitedstatusdefault=dict(type='bool'),
-        tls12ciphersuite=dict(type='int')
+        tls12ciphersuite=dict(type='int', choices=[0, 1, 2, 3, 4])
     )
 
     module = AnsibleModule(

@@ -136,11 +136,11 @@ def main():
         port=dict(type='int'),
         auth=dict(type='bool'),
         user=dict(type='str'),
-        password=dict(type='str'),
+        password=dict(type='str', no_log=True),
         encryption=dict(type='str', choices=['none', 'ifavail', 'always', 'implicit']),
         require_certificate=dict(type='bool'),
         certificate=dict(type='str'),
-        forcepwchange=dict(type='bool')
+        forcepwchange=dict(type='bool', default=False)
     )
 
     module = AnsibleModule(

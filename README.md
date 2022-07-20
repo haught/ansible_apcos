@@ -16,11 +16,11 @@ All APC NMCv2 and NMCv3 with version less than v1.4.2.1 are not supported due to
 
 [haught.apcos.apcos_radius](plugins/modules/network/apcos/apcos_radius.py) - A module to configure RADIUS on APC NMCs.
 
+[haught.apcos.apcos_smtp](plugins/modules/network/apcos/apcos_smtp.py) - A module to configure SMTP option on APC NMCs.
+
 [haught.apcos.apcos_snmp](plugins/modules/network/apcos/apcos_snmp.py) - A module to configure SNMP v2c on APC NMCs.
 
 [haught.apcos.apcos_snmpv3](plugins/modules/network/apcos/apcos_snmpv3.py) - A module to configure SNMP v3 on APC NMCs.
-
-[haught.apcos.apcos_web](plugins/modules/network/apcos/apcos_smtp.py) - A module to configure SMTP option on APC NMCs.
 
 [haught.apcos.apcos_system](plugins/modules/network/apcos/apcos_system.py) - A module to configure system option on APC NMCs.
 
