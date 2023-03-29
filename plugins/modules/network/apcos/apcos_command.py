@@ -34,7 +34,7 @@ options:
         must be double quotes). See examples.
     required: true
     type: list
-    elements: str
+    elements: raw
   wait_for:
     description:
       - List of conditions to evaluate against the output of the
