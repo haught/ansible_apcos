@@ -100,14 +100,9 @@ def run_commands(module, commands):
     connection = get_connection(module)
 
     for cmd in to_list(commands):
-        if isinstance(cmd, dict):
-            command = cmd['command']
-            prompt = cmd['prompt']
-            answer = cmd['answer']
-        else:
-            command = cmd
-            prompt = None
-            answer = None
+        command = cmd['command']
+        prompt = cmd['prompt']
+        answer = cmd['answer']
 
         out = connection.get(command, prompt, answer)
 

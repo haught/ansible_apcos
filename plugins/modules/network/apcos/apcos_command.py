@@ -97,8 +97,8 @@ tasks:
   - name: Run command that requires answering a prompt
     haught.apcos.apcos_command:
       commands:
-        - command: 'reboot'
-          prompt: "Enter 'YES' to continue or <ENTER> to cancel"
+        - command: "reboot"
+          prompt: "Enter 'YES' to continue or ENTER to cancel:"
           answer: "YES"
 """
 
@@ -163,7 +163,7 @@ def main():
     """main entry point for module execution
     """
     argument_spec = dict(
-        commands=dict(type='list', elements='str', required=True),
+        commands=dict(type='list', elements='raw', required=True),
 
         wait_for=dict(type='list', elements='str'),
         match=dict(default='all', choices=['all', 'any']),
